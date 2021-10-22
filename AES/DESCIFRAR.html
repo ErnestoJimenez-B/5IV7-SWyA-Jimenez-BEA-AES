@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/aes.css" />
+    <title>Descifrar</title>
+</head>
+<body>
+    <br>
+    <br>
+    <center>
+          <form name="descifrar">
+              <div class="form-group">
+                  <input type="file" id="archivo">
+                  <br>
+                  <p>Ingresa la llave</p>
+                  <input type="radio" name="AES128D" value="128"> 128
+                  <br>
+                  <input type="radio" name="AES192D" value="192"> 192
+                  <br>
+                  <input type="radio" name="AES256D" value="256"> 256
+                  <br>
+                  <input type="text" name="llave" value="ingresar llave" id="llave">
+                  <br>
+                  <button onclick="return descifrar()">Descifrar</button>
+              </div>
+            </center>
+          </form>
+          <h4>Mensaje Cifrado</h4>
+          <p id="contenido"></p>
+          <p id="mensajes"></p>
+          <h4>Mensaje Descifrado</h4>
+          <p id="mensajeDescifrado"></p>
+          <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" > </script>
+          <script src="./js/descifrar.js"></script>
+      </div>
+      <div>
+        <a class="nav-link" href="./index.html">Regresar</a>
+      <div>
+      <div>
+        <a class="nav-link" href="./CIFRADO.html">Cifrar</a>
+      <div>
+    </center>
+    <section>
+      <img 	 src="IMAGEN/CIPHER.gif"
+                  style="padding-block: 10px; padding-left: 10px; height: 90%;" />
+    </section>
+  </body>
+  
+  <footer>
+  
+    <div>
+      <center>
+      <h4 class='texto' >Jiménez Bernal Ernesto Amador</h4>
+    </center>
+    </div>
+  
+  </footer>
+  
+  </html>

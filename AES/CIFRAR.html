@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <link rel="stylesheet" href="css/aes.css" />
+        <title>Cifrado </title>
+    </head>
+    <body>
+        <form name="AES">
+            <p>Elije el tipo de Cifrado AES</p>
+            <input type="radio" name="AES128" value="128"> 128
+            <br>
+            <input type="radio" name="AES192" value="192"> 192
+            <br>
+            <input type="radio" name="AES256" value="256"> 256
+            <br>
+            <input type="text" value="ingresa la llave" id="llave">
+            <br>
+            <input type="text" value="ingresa el mensaje" id="mensaje">
+            <button onclick="return cifrar()">cifrar</button>
+        </form>
+        <p id="cifrado"></p>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" > </script>
+        <script src="./js/cifrar.js"></script>
+    <div>
+        <a class="nav-link" href="./index.html">Regresar</a>
+        <div>
+            <div>
+              <a class="nav-link" href="./DESCIFRAR.html">Descifrar</a>
+            <div>
+          <center>
+          <section>
+            <img 	 src="IMAGEN/CIPHER.gif"
+                        style="padding-block: 10px; padding-left: 10px; height: 90%;" />
+          </center>
+          </section>
+    
+    </body>
+    <footer>
+
+        <div>
+          <center>
+          <h4 class='texto' >Jiménez Bernal Ernesto Amador</h4>
+        </center>
+        </div>
+      
+      </footer>
+      
+      </html> 
